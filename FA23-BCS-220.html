@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment 1 - Client Info</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 20px;
+      background-color: #f0f9f9;
+      color: #003333;
+      font-size: 18px;
+    }
+    h1, h2, h3 {
+      color: #006666;
+    }
+    table, th, td {
+      border: 2px solid #009999;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+    table {
+      width: 80%;
+      background-color: #ffffff;
+    }
+    th {
+      background-color: #00cccc;
+      color: white;
+    }
+    form {
+      margin: 20px 0;
+      padding: 15px;
+      border: 2px solid #00aaaa;
+      background-color: #e6ffff;
+      border-radius: 8px;
+    }
+    input, select {
+      margin: 8px 0;
+      padding: 8px;
+      width: 250px;
+      font-size: 16px;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+    }
+    input[type="submit"] {
+      background-color: #009999;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+      background-color: #007777;
+    }
+    .section {
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Client Information Page</h1>
+  <hr>
+  <h2>Welcome to Our Portal</h2>
+  <p>
+    Please <b>fill in</b> your details below. <br>
+    This information is <i>kept secure</i> and <u>confidential</u>.
+  </p>
+
+  <h3>Quick Notes</h3>
+  <ul>
+    <li>Use your official email</li>
+    <li>Create a strong password</li>
+    <li>Review before submitting</li>
+  </ul>
+  <ol>
+    <li>Step 1: Enter details</li>
+    <li>Step 2: Verify</li>
+    <li>Step 3: Submit</li>
+  </ol>
+
+  <hr>
+  <h2>Our Company</h2>
+  <p>Visit our official website: 
+    <a href="https://www.openai.com" target="_blank">OpenAI.com</a>
+  </p>
+  <p>Here is our logo:</p>
+  <img src="https://via.placeholder.com/180x100?text=LOGO" alt="Company Logo">
+
+  <div class="section">
+    <h2>Client Data Table</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Subscription</th>
+      </tr>
+      <tr>
+        <td>Ahmed</td>
+        <td>ahmed@mail.com</td>
+        <td>Premium</td>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>maria@mail.com</td>
+        <td>Standard</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>john@mail.com</td>
+        <td>Free</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Form with GET Method</h2>
+    <form action="https://httpbin.org/get" method="get">
+      Name: <input type="text" name="name"><br>
+      Email: <input type="email" name="email"><br>
+      Password: <input type="password" name="password"><br>
+
+      Gender: 
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female <br>
+
+      Interests:
+      <input type="checkbox" name="interest" value="AI"> AI
+      <input type="checkbox" name="interest" value="WebDev"> Web Development
+      <input type="checkbox" name="interest" value="Design"> Design <br>
+
+      Country:
+      <select name="country">
+        <option value="pakistan">Pakistan</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="canada">Canada</option>
+      </select> <br>
+
+      <input type="submit" value="Submit (GET)">
+    </form>
+  </div>
+
+  <div class="section">
+    <h2>Form with POST Method</h2>
+    <form action="" method="post">
+      Name: <input type="text" name="name"><br>
+      Email: <input type="email" name="email"><br>
+      Password: <input type="password" name="password"><br>
+
+      Gender: 
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female <br>
+
+      Interests:
+      <input type="checkbox" name="interest" value="AI"> AI
+      <input type="checkbox" name="interest" value="Cloud"> Cloud Computing
+      <input type="checkbox" name="interest" value="Gaming"> Gaming <br>
+
+      Country:
+      <select name="country">
+        <option value="pakistan">Pakistan</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="germany">Germany</option>
+      </select> <br>
+
+      <input type="submit" value="Submit (POST)">
+    </form>
+  </div>
+
+</body>
+</html>
